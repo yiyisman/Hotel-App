@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yiyisman.hotel.AboutUS">
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/reg"
+        android:id="@+id/imageButton3"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/imgres"
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/hotela"
+        android:id="@+id/imageView13"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+
+    <TextView
+        android:text="Easy Hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView11"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:text="Ingenieria de Software"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:text="Universidad de la Sabana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Andres Puerto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textView7"
+        android:layout_toStartOf="@+id/imageView13"
+        android:layout_marginEnd="20dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        app:srcCompat="@drawable/blog"
+        android:id="@+id/imageButton13"
+        android:layout_height="50dp"
+        android:scaleType="fitStart"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/imageView13"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:text="Oscar Arcos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_marginBottom="16dp"
+        android:layout_alignBottom="@+id/imageButton6"
+        android:layout_alignStart="@+id/textView5" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        app:srcCompat="@drawable/blog"
+        android:id="@+id/imageButton6"
+        android:layout_height="50dp"
+        android:scaleType="fitStart"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/imageButton13"
+        android:layout_alignStart="@+id/imageButton13" />
+</RelativeLayout>

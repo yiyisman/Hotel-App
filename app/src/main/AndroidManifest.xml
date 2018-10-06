@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yiyisman.hotel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hotela"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Gestion" />
+        <activity android:name=".Cliente" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AboutUS" />
+        <activity android:name=".LoginAdmin"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login" />
+        </activity>
+        <activity android:name=".LoginCliente"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login" />
+        </activity>
+        <activity android:name=".RegistrarCliente" />
+        <activity android:name=".ReservarHabitacion" />
+        <activity android:name=".Suite" />
+        <activity android:name=".Conversor" />
+        <activity android:name=".Web" />
+        <activity android:name=".tabs" />
+
+        <fragment android:name=".Empleados" />
+        <fragment android:name=".MyActivity" />
+        <fragment android:name=".TiposHotel" />
+
+        <activity android:name=".NuevoM" />
+        <activity android:name=".Material" />
+        <activity android:name=".Inventario" />
+        <activity android:name=".GestionInventario"
+            android:parentActivityName=".Gestion">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Gestion" />
+        </activity>
+        <activity android:name=".Reservar" />
+        <activity android:name=".FechaReserva"
+            android:parentActivityName=".Reservar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Reservar" />
+        </activity>
+        <activity android:name=".FechaReserva2"
+            android:parentActivityName=".FechaReserva">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FechaReserva" />
+        </activity>
+        <activity android:name=".MiHabitacion"
+            android:parentActivityName=".Cliente">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Cliente" />
+        </activity>
+        <activity android:name=".HabitacionNormal" />
+        <activity android:name=".HabitacionEconomica" />
+        <activity android:name=".Calificacion"
+            android:parentActivityName=".MiHabitacion">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MiHabitacion" />
+        </activity>
+        <activity android:name=".CalificacionesH" />
+        <activity android:name=".grafica"
+            android:parentActivityName=".Gestion">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Gestion" />
+        </activity>
+        <activity android:name=".Factura"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yiyisman.hotel.Login"
+    android:background="@android:color/holo_blue_dark">
+
+    <ImageButton
+        app:srcCompat="@drawable/about"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton4"
+        android:elevation="50dp"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_width="110dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/signaturec"
+        android:id="@+id/imageView8"
+        android:elevation="50dp"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="17dp"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        app:srcCompat="@drawable/signatureg"
+        android:id="@+id/imageView9"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignStart="@+id/imageView8"
+        android:layout_alignEnd="@+id/imageView8" />
+
+    <ImageView
+        app:srcCompat="@drawable/signature"
+        android:elevation="50dp"
+        android:id="@+id/imageView7"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView10"
+        android:layout_alignBottom="@+id/imageView10" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/admin"
+        android:elevation="30dp"
+        android:id="@+id/button"
+        android:scaleType="fitXY"
+        android:layout_marginStart="23dp"
+        android:layout_below="@+id/imageView10"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <ImageButton
+        app:srcCompat="@drawable/clientes"
+        android:elevation="30dp"
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="26dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/hotela"
+        android:id="@+id/imageView10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/blog"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageButton5"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>
